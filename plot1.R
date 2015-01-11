@@ -11,8 +11,10 @@ fullData$Date <- as.Date(fullData$Date, "%d/%m/%Y")
 
 DataSub <- filter(fullData, Date == "2007-2-1"| Date == "2007-2-2")
 
+png(file = "plot1.png",height=480, width=480, bg = "white")
+
 hist(DataSub$Global_active_power, col = "red", main = "Global Active Power", xlab= "Global Active Power (kilowatts)",
 ,ylab="Frequency")
 
-dev.copy(png, file = "plot1.png", height=480, width=480, bg = "white")
+#dev.copy(png, file = "plot1.png", height=480, width=480, bg = "white")
 dev.off()
