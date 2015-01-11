@@ -1,3 +1,9 @@
+##Author Notes
+
+These 4 scripts assume that the data has already been 
+downloaded and unzipped and exists as 
+"household_power_consumption.txt".
+
 ## Introduction
 
 This assignment uses data from
