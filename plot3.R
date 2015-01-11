@@ -11,6 +11,8 @@ DataSub <- filter(fullData, Date == "1/2/2007"| Date == "2/2/2007")
 DataSub$DateTime <- strptime(paste(DataSub$Date,DataSub$Time),
                              format = "%d/%m/%Y %H:%M:%S")
 
+png(file = "plot3.png",height=480, width=480, bg = "white")
+
 plot(DataSub$DateTime, DataSub$Sub_metering_1,type="n", xlab = ""
      , ylab = "Energy sub metering")
 
@@ -22,6 +24,6 @@ legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
        , text.width= strwidth("Sub_metering_1"))
 
 
-dev.copy(png, file = "plot3.png", height=480, width=480, bg = "white"
-         , pointsize = 12)
+#dev.copy(png, file = "plot3.png", height=480, width=480, bg = "white"
+#         , pointsize = 12)
 dev.off()
