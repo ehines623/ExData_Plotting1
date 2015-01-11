@@ -18,7 +18,7 @@ DataSub <- filter(fullData, Date == "2007-2-1"| Date == "2007-2-2")
 png(file = "plot1.png",height=480, width=480, bg = "white")
 
 #make the plot
-hist(DataSub$Global_active_power, col = "red", main = "Global Active Power", xlab= "Global Active Power (kilowatts)",
+hist(DataSub$Global_active_power, col = "red", main = "Global Active Power", xlab= "Global Active Power (kilowatts)"
 ,ylab="Frequency")
 
 #uncomment this line if displaying to window and want to copy to file
