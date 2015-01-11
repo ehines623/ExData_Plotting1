@@ -5,7 +5,7 @@ downloaded and unzipped and exists as
 "household_power_consumption.txt".
 
 The plotting scripts are currently configured to print the plots
-directly to a .png file to avoid some slight differences seens when 
+directly to a .png file to avoid some slight differences seen when 
 using dev.copy.  These can be changed to display to screen/window by 
 commenting/uncommenting lines as noted in scripts
 
