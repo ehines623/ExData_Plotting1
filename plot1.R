@@ -22,6 +22,6 @@ hist(DataSub$Global_active_power, col = "red", main = "Global Active Power", xla
 ,ylab="Frequency")
 
 #uncomment this line if displaying to window and want to copy to file
-#note may be some slight differences in the copy 
+#note may be some slight differences in the copy
 #dev.copy(png, file = "plot1.png", height=480, width=480, bg = "white")
 dev.off()

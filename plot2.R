@@ -22,7 +22,7 @@ plot(DataSub$DateTime, DataSub$Global_active_power, type="l"
      , ylab = "Global Active Power (kilowatts)")
 
 
-#uncomment if displaying to screen and want to also  copy, maybe some 
+#uncomment if displaying to screen and want to also  copy, maybe some
 #slight differences
 #dev.copy(png, file = "plot2.png", height=480, width=480, bg = "white")
 dev.off()

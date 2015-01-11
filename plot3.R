@@ -13,7 +13,7 @@ DataSub <- filter(fullData, Date == "1/2/2007"| Date == "2/2/2007")
 DataSub$DateTime <- strptime(paste(DataSub$Date,DataSub$Time),
                              format = "%d/%m/%Y %H:%M:%S")
 
-#open png file for writing, can be commented out for display to screen 
+#open png file for writing, can be commented out for display to screen
 png(file = "plot3.png",height=480, width=480, bg = "white")
 
 #make the plot, initially empty
